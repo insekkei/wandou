@@ -1,5 +1,5 @@
 *,html,body{
-	font-family:'华文黑体',STHeiti,Sans-serif;
+	font-family:'åŽæ–‡é»‘ä½“',STHeiti,Sans-serif;
 }
 html{
 	position:absolute;
@@ -224,6 +224,11 @@ li.q4:after{
 	line-height:28px;
 	background:#fff;
 }
+.btn:enabled:hover{
+	background: #5ab646;
+	color: #fff !important;
+	border-color:#5ab646 !important;
+}
 .closewifi .btn{float:right;}
 .mywifihead{
 	line-height:28px;
@@ -250,7 +255,7 @@ li.q4:after{
 
 }
 
-/**å¼¹çª—**/
+/**Ã¥Â¼Â¹Ã§Âªâ€”**/
 #pwrequired{
 	position:absolute;
 	width:400px;
