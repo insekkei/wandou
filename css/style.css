@@ -1,5 +1,5 @@
 *,html,body{
-	font-family:'åŽæ–‡é»‘ä½“',STHeiti,Sans-serif;
+	font-family:STHeiti,'Microsoft Yahei',Sans-serif;
 }
 html{
 	position:absolute;
@@ -71,7 +71,9 @@ section{
 }
 .panel{
 	display:none;
-	opacity:.9;
+}
+.panel article{
+	background:rgba(255,255,255,.96);
 }
 article{
 	background:#fff;
@@ -253,7 +255,7 @@ a.btn:hover,input.btn:enabled:hover{
 	background:url(../images/checkbox.png) 0 0 no-repeat;
 }
 
-/**弹框**/
+/**å¼¹æ¡†**/
 #pwrequired{
 	position:absolute;
 	width:400px;
