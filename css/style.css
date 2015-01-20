@@ -1,0 +1,340 @@
+*,html,body{
+	font-family:'microsoft yahei',Sans-serif;
+}
+html{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	background:url(../images/bodybg.png);
+	background-size:100% 100%;
+	color:#666;
+	font-size:14px;
+}
+a{
+	color:#666;
+}
+
+/*header*/
+#header{
+	position:absolute;
+	left:0;
+	top:0;
+	width:290px;
+	background:#eeeeee;
+	height:100%;
+	z-index:9;
+}
+#header ul,h1{
+	margin-left:37.5%;
+}
+#header ul{
+	margin-top:40px;
+	line-height:36px;
+}
+#header ul li a{
+	padding-left:36px;
+}
+#link-wifilist{
+	background:url(../images/wifilist.png) 8px no-repeat;
+	background-size:14px 14px;
+}
+#link-mywifi{
+	background:url(../images/mywifi.png) 8px no-repeat;
+	background-size:14px 14px;
+}
+#link-setting{
+	background:url(../images/setting.png) 8px no-repeat;
+	background-size:14px 14px;
+}
+#link-help{
+	background:url(../images/help.png) 8px no-repeat;
+	background-size:14px 14px;
+}
+h1{
+	height:65px;
+	margin-top:60px;
+	background:url(../images/logo.png) no-repeat;
+	background-size:auto 60px;
+}
+h1 span{
+	display:none;
+}
+section{
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.panel{
+	display:none;
+	opacity:.9;
+}
+article{
+	background:#fff;
+	height:540px;
+	width:490px;
+	text-align:left;
+	margin-top: 105px;
+	margin-left:400px;
+}
+article>div{
+	padding:35px 30px;
+}
+
+.panel:target{
+	display:inline-block;
+}
+
+/**wifilist**/
+h2{
+	font-size:18px;
+	font-family:'åŽæ–‡é»‘ä½“',Sans-serif;
+}
+h2 span{
+	display:block;
+	font-size:12px;
+}
+.listhead h2{
+	float:left;
+}
+.listhead:before{
+	content:"";
+	display:inline-block;
+	width:64px;
+	height:60px;
+	margin-right:20px;
+	vertical-align:middle;
+	float:left;
+	background:url(../images/wifilist-icon.png) 0 0 no-repeat;
+
+}
+.connected{
+	float:right;
+	margin-top:14px;
+}
+.green{
+	color:#5ab646;
+}
+.listhead p:after{
+	content:"";
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin-left:10px;
+	vertical-align:middle;
+	background:url(../images/wifilist-icon.png) -444px -10px no-repeat;
+}
+.searchwifi{
+	position:relative;
+	margin:20px 0;
+}
+.searchwifi input{
+	height:30px;
+	width:260px;
+	padding-left:10px;
+	float:right;
+}
+#submit{
+	border:0;
+	width:30px;
+	background:url(../images/wifilist-icon.png) -444px -114px no-repeat;
+	position:absolute;
+	right:0;
+}
+.wifilist ul,.mywifi ul{
+	margin-top:8px;
+	border-top:1px solid #c9c9c9;
+	border-bottom:1px solid #c9c9c9;
+	height:300px;
+	overflow:auto;
+}
+.wifilist li,.mywifi li{
+	position:relative;
+	margin:10px 0;
+}
+.wifilist li a{
+	display: block;
+}
+.wifilist li a:after{
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	right:50px;
+	top:10px;
+	background:url(../images/wifilist-icon.png) -414px -480px no-repeat;
+}
+.mywifi li:hover{
+	background:#d5f3df;
+}
+.mywifi .remove{
+	position:absolute;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	right:14px;
+	top:12px;
+	z-index:4;
+}
+.mywifi li:hover .remove{
+	background:url(../images/remove.png) no-repeat;
+}
+li:after,.note:before{
+	content:"";
+	display:inline-block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+li.q1:after,.note:before{
+	background:url(../images/wifilist-icon.png) -444px -219px no-repeat;
+}
+li.q2:after{
+	background:url(../images/wifilist-icon.png) -444px -480px no-repeat;
+}
+li.q3:after{
+	background:url(../images/wifilist-icon.png) -444px -262px no-repeat;
+}
+li.q4:after{
+	background:url(../images/wifilist-icon.png) -444px -219px no-repeat;
+}
+.wificontent{
+	font-size:12px;
+}
+.btn{
+	display:inline-block;
+	width:90px;
+	border:1px solid #666;
+	text-align:center;
+	line-height:28px;
+	background:#fff;
+}
+.closewifi .btn{float:right;}
+.mywifihead{
+	line-height:28px;
+}
+.mywifihead p span{
+	display:inline-block;
+	margin:0 8px;
+}
+.mywifi>p,.wifilist>p,.mywifi label{
+	font-size:12px;
+}
+.mywifi form{
+	margin-top:6px;
+}
+#autoadded{
+	-webkit-appearance: inherit;
+	width:12px;
+	height:12px;
+	background:url(../images/checkbox.png) 0 -14px no-repeat;
+}
+#autoadded:checked{
+
+	background:url(../images/checkbox.png) 0 0 no-repeat;
+
+}
+
+/**å¼¹çª—**/
+#pwrequired{
+	position:absolute;
+	width:400px;
+	height:220px;
+	top:30%;
+	left:410px;
+	background:#fff;
+	z-index:10;
+	display:none;
+}
+#pwrequired form{
+	margin:40px 50px;
+}
+#pwrequired form p:last-child{
+	text-align:right;
+}
+#pwrequired form p:last-child a{
+	margin-right:10px;
+	color: #666;
+	border-color:#666;
+}
+.note:before{
+	left:40px;
+	top:35px;
+}
+.note{
+	padding-left:40px;
+}
+#password{
+	padding:0 20px;
+	line-height:28px;
+	width:182px;
+}
+input:disabled{
+	color:#b2b2b2;
+	border-color:#b2b2b2;
+}
+#pwrequired form p{
+	margin:30px 0;
+}
+@media screen and (max-width:960px){
+	body{
+		background:url(../images/m-bodybg.png);
+		background-size:100% 100%;
+	}
+	#header{
+		background:transparent;
+		width:100%;
+		height:40px;
+		text-align:center;
+	}
+	#header ul{
+		margin:20px 0 10px;
+	}
+	h1{
+		display:none;
+	}
+	#header a span{
+		display:none;
+	}
+	#header ul li{
+		float:left;
+		width:24.5%;
+	}
+	#header ul li a{
+		display:inline-block;
+		width:36px;
+		height:36px;
+		background-size:auto 36px;
+	}
+	#link-wifilist{
+		background:url(../images/m-icon.png) 21px no-repeat;
+	}
+	#link-mywifi{
+		background:url(../images/m-icon.png) -109px no-repeat;
+	}
+	#link-setting{
+		background:url(../images/m-icon.png) -244px no-repeat;
+	}
+	#link-help{
+		background:url(../images/m-icon.png) -376px no-repeat;
+	}
+	article{
+		width:90%;
+		height:85%;
+		min-width:330px;
+		margin-left:5%;
+		margin-top:80px;
+	}
+	#pwrequired{
+		left:50%;
+		margin-left:-200px;
+	}
+}
