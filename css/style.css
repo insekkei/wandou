@@ -224,7 +224,7 @@ li.q4:after{
 	line-height:28px;
 	background:#fff;
 }
-a.btn,input.btn:enabled:hover{
+a.btn:hover,input.btn:enabled:hover{
 	background: #5ab646;
 	color: #fff !important;
 	border-color:#5ab646 !important;
