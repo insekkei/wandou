@@ -98,6 +98,9 @@ h2 span{
 	display:block;
 	font-size:12px;
 }
+.listhead{
+	position:relative;
+}
 .listhead h2{
 	float:left;
 }
@@ -119,6 +122,7 @@ h2 span{
 .green{
 	color:#5ab646;
 }
+
 .listhead p:after{
 	content:"";
 	display:inline-block;
@@ -144,6 +148,9 @@ h2 span{
 	background:url(../images/wifilist-icon.png) -444px -114px no-repeat;
 	position:absolute;
 	right:0;
+}
+.wifilist{
+	position:relative;
 }
 .wifilist ul,.mywifi ul{
 	margin-top:8px;
@@ -333,8 +340,31 @@ input:disabled{
 		margin-left:5%;
 		margin-top:80px;
 	}
+
 	#pwrequired{
 		left:50%;
 		margin-left:-200px;
+	}
+	.connected{
+		position:absolute;
+		right:0;
+		bottom:8px;
+	}
+	.wifilist ul, .mywifi ul{
+		height:370px;
+	}
+	.listhead p:after{
+		background:none;
+		width:0;
+	}
+	.searchwifi{
+		margin-bottom:10px;
+	}
+	.searchwifi input{
+		width:60%;
+	}
+	.wifilist>p{
+		position:absolute;
+		top:-24px;
 	}
 }
