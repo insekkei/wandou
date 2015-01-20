@@ -224,7 +224,7 @@ li.q4:after{
 	line-height:28px;
 	background:#fff;
 }
-.btn:enabled:hover{
+a.btn,input.btn:enabled:hover{
 	background: #5ab646;
 	color: #fff !important;
 	border-color:#5ab646 !important;
@@ -250,12 +250,10 @@ li.q4:after{
 	background:url(../images/checkbox.png) 0 -14px no-repeat;
 }
 #autoadded:checked{
-
 	background:url(../images/checkbox.png) 0 0 no-repeat;
-
 }
 
-/**Ã¥Â¼Â¹Ã§Âªâ€”**/
+/**弹框**/
 #pwrequired{
 	position:absolute;
 	width:400px;
@@ -287,7 +285,7 @@ li.q4:after{
 #password{
 	padding:0 20px;
 	line-height:28px;
-	width:182px;
+	width:180px;
 }
 input:disabled{
 	color:#b2b2b2;
