@@ -10,6 +10,6 @@ $(function(){
 	});
 	$('.remove').click(function(e){
 		e.preventDefault();
-		$(this).parent('li').slideUp(500);
+		$(this).parent('li').fadeOut(500);
 	});
 });
