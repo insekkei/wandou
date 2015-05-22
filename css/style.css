@@ -306,7 +306,7 @@ a.btn:hover,input.btn:enabled:hover{
 	margin:20px 10px;
 }
 /*select*/
-.selectContainer{position:relative; width: 240px; padding: 0 15px;display:inline-block;border:1px solid #ccc;vertical-align: middle;} 
+.selectContainer{position:relative; background:#fff;width: 240px; padding: 0 15px;display:inline-block;border:1px solid #ccc;vertical-align: middle;} 
 .selectContainer .selectOption{min-width: 100%; display: block;line-height:32px; height:32px;
  white-space:nowrap; overflow:hidden;border:none; z-index:1000} 
 .selectOption em{font-size:12px;}
