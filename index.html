@@ -21,13 +21,19 @@
 			<ul id="navigation" class="clearfix">
 				<li class="current"><a id="link-wifilist" href="#wifilist"><span>Wi-Fi连接</span></a></li>
 				<li><a id="link-mywifi" href="#mywifi"><span>管理我的Wi-Fi</span></a></li>
-				<li><a id="link-setting" href="#setting"><span>设置</span></a></li>
+				<li class="has-menu"><a id="link-setting"><span>设置</span></a>
+					<ul>
+						<li><a id="link-wire-setting" href="#wire-setting">有线设置</a></li>
+						<li><a id="link-wifi-setting" href="#wifi-setting">无线设置</a></li>
+						<li><a id="link-system-setting" href="#system-setting">系统设置</a></li>
+					</ul>
+				</li>
 				<li><a id="link-help" href="#help"><span>帮助</span></a></li>
 			</ul>
 		</header>		
 
 		<!-- wifilist -->
-		<section id="wifilist" class="index transition">
+		<section id="wifilist" class="index panel transition">
 		    <article class="content shadowed2">
 				<div>
 					<div class="listhead clearfix">
@@ -162,6 +168,133 @@
 		    </article>
 		</section>
 		<!-- /mywifi -->
+		<!-- wired-setting -->
+		<section id="wire-setting" class="panel transition">
+		    <article class="content shadowed2">
+				<div>
+					<form method="" action="" class="form">
+						<h2 class="note">有线设置</h2>
+						<div>
+							<label for="type">类型：</label>
+							<div class="selectContainer" id="type" name="type"> 
+			                  <span class="selectOption gray ifdisplay1">固定IP</span> 
+			                  <ul class="selectMenu"> 
+			                      <li>动态获取</li> 
+			                      <li>固定IP</li> 
+			                      <li>PPPOE</li> 
+			                  </ul> 
+			                  <span class="shows"></span> 
+			              </div>
+						</div>
+						<p>
+							<label for="ip">IP：</label>
+							<input type="text" name="ip" id="ip">
+						</p>
+						<p>
+							<label for="mask">子网掩码：</label>
+							<input type="text" name="mask" id="mask">
+						</p>
+						<p>
+							<label for="gate">网关：</label>
+							<input type="text" name="gate" id="gate">
+						</p>
+						<p></p>
+						<p>
+							<label for="pppoe-name">PPPOE用户名：</label>
+							<input type="text" name="pppoe-name" id="pppoe-name">
+						</p>
+						<p>
+							<label for="wan-pw">PPPOE密码：</label>
+							<input type="password" name="pppoe-pw" id="pppoe-pw">
+						</p>
+						<div class="setting-actions">
+							<a href="" class="btn close transition">取消</a><input class="btn transition" type="submit" value="保存">
+						</div>
+					</form>
+				</div>
+		    </article>
+		</section>
+		<!-- /wired-setting -->
+		<!-- wifi-setting -->
+		<section id="wifi-setting" class="panel transition">
+		    <article class="content shadowed2">
+				<div>
+					<form method="" action="" class="form">
+						<h2 class="note">无线设置</h2>
+						<div>
+							<label for="channel">信道：</label>
+							<div class="selectContainer" id="channel" name="channel"> 
+			                  <span class="selectOption gray">3</span> 
+			                  <ul class="selectMenu"> 
+			                      <li>1</li> 
+			                      <li>2</li> 
+			                      <li>3</li> 
+			                      <li>4</li>
+			                      <li>5</li>
+			                      <li>6</li>
+			                      <li>7</li>
+			                      <li>8</li>
+			                      <li>9</li>
+			                      <li>10</li>
+			                      <li>11</li>
+			                      <li>12</li>
+			                      <li>13</li>
+			                  </ul> 
+			                  <span class="shows"></span> 
+			              </div>
+						</div>
+						<div>
+							<label for="pw-way">加密方式：</label>
+							<div class="selectContainer" id="pw-way" name="pw-way"> 
+			                  <span class="selectOption gray ifdisplay2">不加密</span> 
+			                  <ul class="selectMenu"> 
+			                      <li>不加密</li> 
+			                      <li>WEP</li> 
+			                      <li>WPA2PSK</li> 
+			                  </ul> 
+			                  <span class="shows"></span> 
+			              </div>
+						</div>
+						<p>
+							<label for="ssid">SSID：</label>
+							<input type="text" name="ssid" id="ssid">
+						</p>
+						<p>
+							<label for="wifi-pw">无线密码：</label>
+							<input type="password" name="wifi-pw" id="wifi-pw">
+						</p>
+						
+						<p class="setting-actions">
+							<a href="" class="btn close transition">取消</a><input class="btn transition" type="submit" value="保存">
+						</p>
+					</form>
+				</div>
+		    </article>
+		</section>
+		<!-- /wifi-setting -->
+		<!-- system-setting -->
+		<section id="system-setting" class="panel transition">
+		    <article class="content shadowed2">
+
+				<div>
+					<form method="" action="" class="form">
+						<h2 class="note">系统设置</h2>
+						<p>
+							<label for="new-pw">新密码：</label>
+							<input type="password" name="new-pw" id="new-pw">
+						</p>
+						<p>
+							<label for="re-pw">再输一遍：</label>
+							<input type="password" name="re-pw" id="re-pw">
+						</p>
+						<p class="setting-actions">
+							<a href="" class="btn close transition">取消</a><input class="btn transition" type="submit" value="保存">
+						</p>
+					</form>
+				</div>
+		    </article>
+		</section>
+		<!-- /system-setting -->
 		<!--input password layer-->
 		<div id="pwrequired" class="shadowed2">
 			<form method="" action="">
