@@ -77,7 +77,7 @@ $(function(){
     			$('#ip,#mask,#gate').attr('disabled','disabled').css('opacity','.3');
     			break;
     		default:
-    			
+    			$('input').removeAttr('disabled').css('opacity','1');
     			break;
 
     	}
