@@ -2,16 +2,19 @@
 	font-family:STHeiti,'Microsoft Yahei',Sans-serif;
 }
 html{
-	position:absolute;
 	width:100%;
 	height:100%;
 }
 body{
 	width:100%;
 	height:100%;
+	background-image: -webkit-gradient(linear, left top,left bottom,from(#104e51), to(#adb671));
+	background-image: -webkit-linear-gradient(top , #104e51, #adb671);
 	background-image: -moz-linear-gradient(top , #104e51, #adb671);
-	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#104e51), to(#adb671));
 	background-image: -o-linear-gradient(top , #104e51, #adb671);
+	background-image: -ms-linear-gradient(top , #104e51, #adb671);
+	background-image: linear-gradient(top , #104e51, #adb671);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#104e51',endColorStr='#adb671',gradientType='0'); 
 	background-size:100% 100%;
 	color:#666;
 	font-size:14px;
